@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --bg-color: #202733;
+  --card-color: #313a48;
+  --light: #cee3e9;
+  --green: #53ffaa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Manrope', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--card-color);
+  border-radius: 10px;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  width: 343px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h1 {
+  color: var(--green);
+  font-size: 11px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.advice__text {
+  color: var(--light);
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.divider {
+  background: url('../images/pattern-divider-mobile.svg') no-repeat center;
+  margin-bottom: 2rem;
+  height: 1rem;
+  width: 100%;
+}
+
+.btn {
+  background-color: var(--green);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 64px;
+  width: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: -30px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 40px rgb(83, 255, 170, 0.5);
+}
+
+.btn:disabled {
+  background-color: var(--light);
+  cursor: default;
+}
+
+.btn:disabled:hover {
+  box-shadow: none;
+}
+
+.attribution {
+  color: var(--light);
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 2rem;
+}
+.attribution a {
+  color: var(--green);
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 3rem;
+    width: 540px;
+  }
+
+  .card h1 {
+    font-size: 13px;
+  }
+
+  .advice__text {
+    font-size: 1.75rem;
+  }
+
+  .divider {
+    background: url('../images/pattern-divider-desktop.svg') no-repeat center;
+    margin: 1rem 0 2rem;
+    height: 1rem;
+    width: 100%;
+  }
+}
