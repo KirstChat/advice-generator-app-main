@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./screenshot.jpg) -->
+![Desktop Screenshot](./assets/images/desktop-screenshot.png)
 
 ### Links
 
@@ -32,12 +32,13 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Vanilla JavaScript
+- GSAP Animation Tools
 - Mobile-first workflow
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [GreenSock](https://greensock.com/docs/v3/GSAP/gsap.fromTo()) - The gsap.fromTo() tween was used to add animation to text to fade in when a user clicks the button to generate new advice.
 
 ## Author
 
